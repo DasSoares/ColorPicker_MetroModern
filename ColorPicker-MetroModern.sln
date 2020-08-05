@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30320.27
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "ColorPicker-MetroModern", "ColorPicker-MetroModern\ColorPicker-MetroModern.vbproj", "{BDDB6DC6-8341-4958-AA68-3AD6C72DBED5}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{BDDB6DC6-8341-4958-AA68-3AD6C72DBED5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BDDB6DC6-8341-4958-AA68-3AD6C72DBED5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BDDB6DC6-8341-4958-AA68-3AD6C72DBED5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BDDB6DC6-8341-4958-AA68-3AD6C72DBED5}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {F6D06EB7-8484-4770-8443-961DA096E429}
+	EndGlobalSection
+EndGlobal

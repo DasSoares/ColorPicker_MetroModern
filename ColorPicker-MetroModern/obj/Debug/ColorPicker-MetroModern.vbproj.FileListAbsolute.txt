@@ -1,0 +1,16 @@
+C:\Users\Danilo - PC\source\repos\ColorPicker-MetroModern\ColorPicker-MetroModern\bin\Debug\ColorPicker-MetroModern.exe.config
+C:\Users\Danilo - PC\source\repos\ColorPicker-MetroModern\ColorPicker-MetroModern\bin\Debug\ColorPicker-MetroModern.exe
+C:\Users\Danilo - PC\source\repos\ColorPicker-MetroModern\ColorPicker-MetroModern\bin\Debug\ColorPicker-MetroModern.pdb
+C:\Users\Danilo - PC\source\repos\ColorPicker-MetroModern\ColorPicker-MetroModern\bin\Debug\ColorPicker-MetroModern.xml
+C:\Users\Danilo - PC\source\repos\ColorPicker-MetroModern\ColorPicker-MetroModern\bin\Debug\MetroFramework.Design.dll
+C:\Users\Danilo - PC\source\repos\ColorPicker-MetroModern\ColorPicker-MetroModern\bin\Debug\MetroFramework.dll
+C:\Users\Danilo - PC\source\repos\ColorPicker-MetroModern\ColorPicker-MetroModern\bin\Debug\MetroFramework.Fonts.dll
+C:\Users\Danilo - PC\source\repos\ColorPicker-MetroModern\ColorPicker-MetroModern\obj\Debug\ColorPicker-MetroModern.vbprojAssemblyReference.cache
+C:\Users\Danilo - PC\source\repos\ColorPicker-MetroModern\ColorPicker-MetroModern\obj\Debug\ColorPicker_MetroModern.Form1.resources
+C:\Users\Danilo - PC\source\repos\ColorPicker-MetroModern\ColorPicker-MetroModern\obj\Debug\ColorPicker_MetroModern.Resources.resources
+C:\Users\Danilo - PC\source\repos\ColorPicker-MetroModern\ColorPicker-MetroModern\obj\Debug\ColorPicker-MetroModern.vbproj.GenerateResource.cache
+C:\Users\Danilo - PC\source\repos\ColorPicker-MetroModern\ColorPicker-MetroModern\obj\Debug\ColorPicker-MetroModern.vbproj.CoreCompileInputs.cache
+C:\Users\Danilo - PC\source\repos\ColorPicker-MetroModern\ColorPicker-MetroModern\obj\Debug\ColorPicker-MetroModern.vbproj.CopyComplete
+C:\Users\Danilo - PC\source\repos\ColorPicker-MetroModern\ColorPicker-MetroModern\obj\Debug\ColorPicker-MetroModern.exe
+C:\Users\Danilo - PC\source\repos\ColorPicker-MetroModern\ColorPicker-MetroModern\obj\Debug\ColorPicker-MetroModern.xml
+C:\Users\Danilo - PC\source\repos\ColorPicker-MetroModern\ColorPicker-MetroModern\obj\Debug\ColorPicker-MetroModern.pdb
