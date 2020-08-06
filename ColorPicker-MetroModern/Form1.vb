@@ -3,6 +3,7 @@
 #Region " Declarações "
     Private idcor As Integer = 0
     Private idtema As Integer = 0
+    Private bCapturarCor As Boolean = False
 
     Public Tema As New MetroFramework.MetroThemeStyle
     Public Cor As New MetroFramework.MetroColorStyle
@@ -21,6 +22,34 @@
         ModelaForm()
         updateColor(trbRed.Value, trbGreen.Value, trbBlue.Value)
         cboTipos.SelectedIndex = 0
+    End Sub
+
+    Private Sub Timer1_Tick(sender As Object, e As EventArgs) Handles Timer1.Tick
+        Dim bmp As New Bitmap(1, 1)
+
+        Using g As Graphics = Graphics.FromImage(bmp)
+            g.CopyFromScreen(Windows.Forms.Cursor.Position, New Point(0, 0), New Size(1, 1))
+        End Using
+
+        Dim pixel As Drawing.Color = bmp.GetPixel(0, 0)
+
+        Dim red As String = bmp.GetPixel(0, 0).R.ToString
+        Dim green As String = bmp.GetPixel(0, 0).G.ToString
+        Dim blue As String = bmp.GetPixel(0, 0).B.ToString
+
+        If cboTipos.SelectedIndex = 0 Then
+            txtResult.Text = red & ", " & green & ", " & blue
+        ElseIf cboTipos.SelectedIndex > 0 Then
+            txtResult.Text = ColorTranslator.ToHtml(Color.FromArgb(pixel.R, pixel.G, pixel.B)).ToString
+        End If
+
+        Dim p As New Point()
+
+        p.X = (Me.Width / 2) - (lblCor.Width / 2)
+        p.Y = lblCor.Top
+        lblCor.Location = p
+        lblCor.BackColor = pixel
+        Me.Invalidate()
     End Sub
 #End Region
 
@@ -89,6 +118,16 @@
 
     Private Sub cboTema_SelectedIndexChanged(sender As Object, e As EventArgs) Handles cboTema.SelectedIndexChanged
         Estilo(sender)
+    End Sub
+
+    Private Sub picPegaCor_Click(sender As Object, e As EventArgs) Handles picPegaCor.Click
+        If bCapturarCor = False Then
+            bCapturarCor = True
+            Me.Timer1.Start()
+        Else
+            bCapturarCor = False
+            Me.Timer1.Stop()
+        End If
     End Sub
 #End Region
 

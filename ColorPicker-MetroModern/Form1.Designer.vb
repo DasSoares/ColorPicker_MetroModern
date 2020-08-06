@@ -23,6 +23,8 @@ Partial Class Form1
     'Não o modifique usando o editor de códigos.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
+        Me.components = New System.ComponentModel.Container()
+        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(Form1))
         Me.MetroTile2 = New MetroFramework.Controls.MetroTile()
         Me.txtResult = New MetroFramework.Controls.MetroTextBox()
         Me.cboTipos = New MetroFramework.Controls.MetroComboBox()
@@ -49,7 +51,11 @@ Partial Class Form1
         Me.cboTema = New MetroFramework.Controls.MetroComboBox()
         Me.cboCor = New MetroFramework.Controls.MetroComboBox()
         Me.lblCor = New MetroFramework.Controls.MetroLabel()
+        Me.MetroToolTip1 = New MetroFramework.Components.MetroToolTip()
+        Me.Timer1 = New System.Windows.Forms.Timer(Me.components)
+        Me.picPegaCor = New System.Windows.Forms.PictureBox()
         Me.panEstilo.SuspendLayout()
+        CType(Me.picPegaCor, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'MetroTile2
@@ -430,11 +436,32 @@ Partial Class Form1
         Me.lblCor.TabIndex = 42
         Me.lblCor.UseCustomBackColor = True
         '
+        'MetroToolTip1
+        '
+        Me.MetroToolTip1.Style = MetroFramework.MetroColorStyle.[Default]
+        Me.MetroToolTip1.StyleManager = Nothing
+        Me.MetroToolTip1.Theme = MetroFramework.MetroThemeStyle.[Default]
+        '
+        'Timer1
+        '
+        '
+        'picPegaCor
+        '
+        Me.picPegaCor.Image = Global.ColorPicker_MetroModern.My.Resources.Resources.color_dropper_16
+        Me.picPegaCor.Location = New System.Drawing.Point(276, 41)
+        Me.picPegaCor.Name = "picPegaCor"
+        Me.picPegaCor.Size = New System.Drawing.Size(16, 16)
+        Me.picPegaCor.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize
+        Me.picPegaCor.TabIndex = 43
+        Me.picPegaCor.TabStop = False
+        Me.MetroToolTip1.SetToolTip(Me.picPegaCor, "CAPUTRAR COR")
+        '
         'Form1
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(314, 552)
+        Me.Controls.Add(Me.picPegaCor)
         Me.Controls.Add(Me.lblCor)
         Me.Controls.Add(Me.panEstilo)
         Me.Controls.Add(Me.chkEstilo)
@@ -457,14 +484,15 @@ Partial Class Form1
         Me.Controls.Add(Me.trbGreen)
         Me.Controls.Add(Me.lblRed)
         Me.Controls.Add(Me.trbRed)
+        Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
         Me.MaximizeBox = False
         Me.Name = "Form1"
         Me.Resizable = False
         Me.ShadowType = MetroFramework.Forms.MetroFormShadowType.AeroShadow
         Me.Text = "Paleta de Cores"
-        Me.TextAlign = MetroFramework.Forms.MetroFormTextAlign.Center
         Me.panEstilo.ResumeLayout(False)
         Me.panEstilo.PerformLayout()
+        CType(Me.picPegaCor, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
@@ -496,4 +524,7 @@ Partial Class Form1
     Friend WithEvents cboTema As MetroFramework.Controls.MetroComboBox
     Friend WithEvents cboCor As MetroFramework.Controls.MetroComboBox
     Friend WithEvents lblCor As MetroFramework.Controls.MetroLabel
+    Friend WithEvents picPegaCor As PictureBox
+    Friend WithEvents MetroToolTip1 As MetroFramework.Components.MetroToolTip
+    Friend WithEvents Timer1 As Timer
 End Class
