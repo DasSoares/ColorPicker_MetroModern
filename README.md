@@ -1,5 +1,6 @@
-# ColorPicker
-### Com Metroframework
+# ColorPicker com o Framework `Metroframework`
+
+### ⚠ Este Projeto não esta completo.
 
 Imagem do Projeto 👇🏻
 
