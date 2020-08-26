@@ -13,3 +13,36 @@ C:\Users\Danilo - PC\source\repos\ColorPicker-MetroModern\ColorPicker-MetroModer
 C:\Users\Danilo - PC\source\repos\ColorPicker-MetroModern\ColorPicker-MetroModern\obj\Debug\ColorPicker-MetroModern.exe
 C:\Users\Danilo - PC\source\repos\ColorPicker-MetroModern\ColorPicker-MetroModern\obj\Debug\ColorPicker-MetroModern.xml
 C:\Users\Danilo - PC\source\repos\ColorPicker-MetroModern\ColorPicker-MetroModern\obj\Debug\ColorPicker-MetroModern.pdb
+C:\Users\Danilo - PC\source\repos\ColorPicker-MetroModern\ColorPicker-MetroModern\obj\Debug\ColorPicker-MetroModern.vbprojAssemblyReference.cache
+C:\Users\danil\source\repos\ColorPicker-MetroModern\ColorPicker-MetroModern\bin\Debug\ColorPicker-MetroModern.exe.config
+C:\Users\danil\source\repos\ColorPicker-MetroModern\ColorPicker-MetroModern\bin\Debug\ColorPicker-MetroModern.exe
+C:\Users\danil\source\repos\ColorPicker-MetroModern\ColorPicker-MetroModern\bin\Debug\ColorPicker-MetroModern.pdb
+C:\Users\danil\source\repos\ColorPicker-MetroModern\ColorPicker-MetroModern\bin\Debug\ColorPicker-MetroModern.xml
+C:\Users\danil\source\repos\ColorPicker-MetroModern\ColorPicker-MetroModern\bin\Debug\MetroFramework.Design.dll
+C:\Users\danil\source\repos\ColorPicker-MetroModern\ColorPicker-MetroModern\bin\Debug\MetroFramework.dll
+C:\Users\danil\source\repos\ColorPicker-MetroModern\ColorPicker-MetroModern\bin\Debug\MetroFramework.Fonts.dll
+C:\Users\danil\source\repos\ColorPicker-MetroModern\ColorPicker-MetroModern\obj\Debug\ColorPicker-MetroModern.vbprojAssemblyReference.cache
+C:\Users\danil\source\repos\ColorPicker-MetroModern\ColorPicker-MetroModern\obj\Debug\ColorPicker_MetroModern.Form1.resources
+C:\Users\danil\source\repos\ColorPicker-MetroModern\ColorPicker-MetroModern\obj\Debug\ColorPicker_MetroModern.Resources.resources
+C:\Users\danil\source\repos\ColorPicker-MetroModern\ColorPicker-MetroModern\obj\Debug\ColorPicker-MetroModern.vbproj.GenerateResource.cache
+C:\Users\danil\source\repos\ColorPicker-MetroModern\ColorPicker-MetroModern\obj\Debug\ColorPicker-MetroModern.vbproj.CoreCompileInputs.cache
+C:\Users\danil\source\repos\ColorPicker-MetroModern\ColorPicker-MetroModern\obj\Debug\ColorPicker-MetroModern.vbproj.CopyComplete
+C:\Users\danil\source\repos\ColorPicker-MetroModern\ColorPicker-MetroModern\obj\Debug\ColorPicker-MetroModern.exe
+C:\Users\danil\source\repos\ColorPicker-MetroModern\ColorPicker-MetroModern\obj\Debug\ColorPicker-MetroModern.xml
+C:\Users\danil\source\repos\ColorPicker-MetroModern\ColorPicker-MetroModern\obj\Debug\ColorPicker-MetroModern.pdb
+E:\Visual Studio\ColorPicker-MetroModern\ColorPicker-MetroModern\bin\Debug\ColorPicker-MetroModern.exe.config
+E:\Visual Studio\ColorPicker-MetroModern\ColorPicker-MetroModern\bin\Debug\ColorPicker-MetroModern.exe
+E:\Visual Studio\ColorPicker-MetroModern\ColorPicker-MetroModern\bin\Debug\ColorPicker-MetroModern.pdb
+E:\Visual Studio\ColorPicker-MetroModern\ColorPicker-MetroModern\bin\Debug\ColorPicker-MetroModern.xml
+E:\Visual Studio\ColorPicker-MetroModern\ColorPicker-MetroModern\bin\Debug\MetroFramework.Design.dll
+E:\Visual Studio\ColorPicker-MetroModern\ColorPicker-MetroModern\bin\Debug\MetroFramework.dll
+E:\Visual Studio\ColorPicker-MetroModern\ColorPicker-MetroModern\bin\Debug\MetroFramework.Fonts.dll
+E:\Visual Studio\ColorPicker-MetroModern\ColorPicker-MetroModern\obj\Debug\ColorPicker-MetroModern.vbprojAssemblyReference.cache
+E:\Visual Studio\ColorPicker-MetroModern\ColorPicker-MetroModern\obj\Debug\ColorPicker_MetroModern.Form1.resources
+E:\Visual Studio\ColorPicker-MetroModern\ColorPicker-MetroModern\obj\Debug\ColorPicker_MetroModern.Resources.resources
+E:\Visual Studio\ColorPicker-MetroModern\ColorPicker-MetroModern\obj\Debug\ColorPicker-MetroModern.vbproj.GenerateResource.cache
+E:\Visual Studio\ColorPicker-MetroModern\ColorPicker-MetroModern\obj\Debug\ColorPicker-MetroModern.vbproj.CoreCompileInputs.cache
+E:\Visual Studio\ColorPicker-MetroModern\ColorPicker-MetroModern\obj\Debug\ColorPicker-MetroModern.vbproj.CopyComplete
+E:\Visual Studio\ColorPicker-MetroModern\ColorPicker-MetroModern\obj\Debug\ColorPicker-MetroModern.exe
+E:\Visual Studio\ColorPicker-MetroModern\ColorPicker-MetroModern\obj\Debug\ColorPicker-MetroModern.xml
+E:\Visual Studio\ColorPicker-MetroModern\ColorPicker-MetroModern\obj\Debug\ColorPicker-MetroModern.pdb

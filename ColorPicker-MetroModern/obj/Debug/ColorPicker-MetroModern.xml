@@ -22,6 +22,16 @@ ColorPicker-MetroModern
   pesquisas de recursos que usam essa classe de recurso de tipo de alta segurança.
 </summary>
 </member>
+<member name="P:ColorPicker_MetroModern.My.Resources.Resources.arrow_16">
+<summary>
+  Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:ColorPicker_MetroModern.My.Resources.Resources.arrow_pointing_left_16">
+<summary>
+  Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+</summary>
+</member>
 <member name="P:ColorPicker_MetroModern.My.Resources.Resources.color_dropper_16">
 <summary>
   Consulta um recurso localizado do tipo System.Drawing.Bitmap.

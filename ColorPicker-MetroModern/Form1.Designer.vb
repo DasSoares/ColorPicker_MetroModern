@@ -1,10 +1,10 @@
-﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()> _
+﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()>
 Partial Class Form1
     'Inherits System.Windows.Forms.Form
     Inherits MetroFramework.Forms.MetroForm
 
     'Descartar substituições de formulário para limpar a lista de componentes.
-    <System.Diagnostics.DebuggerNonUserCode()> _
+    <System.Diagnostics.DebuggerNonUserCode()>
     Protected Overrides Sub Dispose(ByVal disposing As Boolean)
         Try
             If disposing AndAlso components IsNot Nothing Then
@@ -21,9 +21,12 @@ Partial Class Form1
     'OBSERVAÇÃO: o procedimento a seguir é exigido pelo Windows Form Designer
     'Pode ser modificado usando o Windows Form Designer.  
     'Não o modifique usando o editor de códigos.
-    <System.Diagnostics.DebuggerStepThrough()> _
+    <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
         Me.components = New System.ComponentModel.Container()
+        Dim DataGridViewCellStyle1 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle2 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle3 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(Form1))
         Me.MetroTile2 = New MetroFramework.Controls.MetroTile()
         Me.txtResult = New MetroFramework.Controls.MetroTextBox()
@@ -52,10 +55,20 @@ Partial Class Form1
         Me.cboCor = New MetroFramework.Controls.MetroComboBox()
         Me.lblCor = New MetroFramework.Controls.MetroLabel()
         Me.MetroToolTip1 = New MetroFramework.Components.MetroToolTip()
-        Me.Timer1 = New System.Windows.Forms.Timer(Me.components)
+        Me.picExibirLista = New System.Windows.Forms.PictureBox()
         Me.picPegaCor = New System.Windows.Forms.PictureBox()
+        Me.Timer1 = New System.Windows.Forms.Timer(Me.components)
+        Me.lsbCores = New System.Windows.Forms.ListBox()
+        Me.Timer2 = New System.Windows.Forms.Timer(Me.components)
+        Me.picLupa = New System.Windows.Forms.PictureBox()
+        Me.tlZoomWidth = New MetroFramework.Controls.MetroTile()
+        Me.tlZoomHeight = New MetroFramework.Controls.MetroTile()
+        Me.dgvCores = New MetroFramework.Controls.MetroGrid()
         Me.panEstilo.SuspendLayout()
+        CType(Me.picExibirLista, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.picPegaCor, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.picLupa, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.dgvCores, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'MetroTile2
@@ -430,9 +443,9 @@ Partial Class Form1
         '
         Me.lblCor.BackColor = System.Drawing.Color.FromArgb(CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer))
         Me.lblCor.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.lblCor.Location = New System.Drawing.Point(23, 60)
+        Me.lblCor.Location = New System.Drawing.Point(15, 60)
         Me.lblCor.Name = "lblCor"
-        Me.lblCor.Size = New System.Drawing.Size(270, 118)
+        Me.lblCor.Size = New System.Drawing.Size(141, 118)
         Me.lblCor.TabIndex = 42
         Me.lblCor.UseCustomBackColor = True
         '
@@ -442,13 +455,21 @@ Partial Class Form1
         Me.MetroToolTip1.StyleManager = Nothing
         Me.MetroToolTip1.Theme = MetroFramework.MetroThemeStyle.[Default]
         '
-        'Timer1
+        'picExibirLista
         '
+        Me.picExibirLista.Image = Global.ColorPicker_MetroModern.My.Resources.Resources.arrow_16
+        Me.picExibirLista.Location = New System.Drawing.Point(276, 41)
+        Me.picExibirLista.Name = "picExibirLista"
+        Me.picExibirLista.Size = New System.Drawing.Size(16, 16)
+        Me.picExibirLista.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize
+        Me.picExibirLista.TabIndex = 45
+        Me.picExibirLista.TabStop = False
+        Me.MetroToolTip1.SetToolTip(Me.picExibirLista, "CAPUTRAR COR")
         '
         'picPegaCor
         '
         Me.picPegaCor.Image = Global.ColorPicker_MetroModern.My.Resources.Resources.color_dropper_16
-        Me.picPegaCor.Location = New System.Drawing.Point(276, 41)
+        Me.picPegaCor.Location = New System.Drawing.Point(243, 41)
         Me.picPegaCor.Name = "picPegaCor"
         Me.picPegaCor.Size = New System.Drawing.Size(16, 16)
         Me.picPegaCor.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize
@@ -456,11 +477,112 @@ Partial Class Form1
         Me.picPegaCor.TabStop = False
         Me.MetroToolTip1.SetToolTip(Me.picPegaCor, "CAPUTRAR COR")
         '
+        'Timer1
+        '
+        '
+        'lsbCores
+        '
+        Me.lsbCores.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lsbCores.FormattingEnabled = True
+        Me.lsbCores.ItemHeight = 16
+        Me.lsbCores.Location = New System.Drawing.Point(545, 60)
+        Me.lsbCores.Name = "lsbCores"
+        Me.lsbCores.Size = New System.Drawing.Size(183, 356)
+        Me.lsbCores.TabIndex = 46
+        '
+        'Timer2
+        '
+        Me.Timer2.Enabled = True
+        Me.Timer2.Interval = 10
+        '
+        'picLupa
+        '
+        Me.picLupa.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.picLupa.Location = New System.Drawing.Point(162, 60)
+        Me.picLupa.Name = "picLupa"
+        Me.picLupa.Size = New System.Drawing.Size(138, 118)
+        Me.picLupa.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
+        Me.picLupa.TabIndex = 47
+        Me.picLupa.TabStop = False
+        '
+        'tlZoomWidth
+        '
+        Me.tlZoomWidth.ActiveControl = Nothing
+        Me.tlZoomWidth.Location = New System.Drawing.Point(162, 119)
+        Me.tlZoomWidth.Name = "tlZoomWidth"
+        Me.tlZoomWidth.Size = New System.Drawing.Size(138, 1)
+        Me.tlZoomWidth.TabIndex = 48
+        Me.tlZoomWidth.Text = "MetroTile3"
+        Me.tlZoomWidth.UseSelectable = True
+        '
+        'tlZoomHeight
+        '
+        Me.tlZoomHeight.ActiveControl = Nothing
+        Me.tlZoomHeight.Location = New System.Drawing.Point(231, 60)
+        Me.tlZoomHeight.Name = "tlZoomHeight"
+        Me.tlZoomHeight.Size = New System.Drawing.Size(1, 118)
+        Me.tlZoomHeight.TabIndex = 49
+        Me.tlZoomHeight.Text = "MetroTile4"
+        Me.tlZoomHeight.UseSelectable = True
+        '
+        'dgvCores
+        '
+        Me.dgvCores.AllowUserToAddRows = False
+        Me.dgvCores.AllowUserToDeleteRows = False
+        Me.dgvCores.AllowUserToResizeRows = False
+        Me.dgvCores.BackgroundColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(255, Byte), Integer), CType(CType(255, Byte), Integer))
+        Me.dgvCores.BorderStyle = System.Windows.Forms.BorderStyle.None
+        Me.dgvCores.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.None
+        Me.dgvCores.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None
+        DataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
+        DataGridViewCellStyle1.BackColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(174, Byte), Integer), CType(CType(219, Byte), Integer))
+        DataGridViewCellStyle1.Font = New System.Drawing.Font("Segoe UI", 11.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel)
+        DataGridViewCellStyle1.ForeColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(255, Byte), Integer), CType(CType(255, Byte), Integer))
+        DataGridViewCellStyle1.SelectionBackColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(198, Byte), Integer), CType(CType(247, Byte), Integer))
+        DataGridViewCellStyle1.SelectionForeColor = System.Drawing.Color.FromArgb(CType(CType(17, Byte), Integer), CType(CType(17, Byte), Integer), CType(CType(17, Byte), Integer))
+        DataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
+        Me.dgvCores.ColumnHeadersDefaultCellStyle = DataGridViewCellStyle1
+        Me.dgvCores.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
+        DataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
+        DataGridViewCellStyle2.BackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(255, Byte), Integer), CType(CType(255, Byte), Integer))
+        DataGridViewCellStyle2.Font = New System.Drawing.Font("Segoe UI", 11.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel)
+        DataGridViewCellStyle2.ForeColor = System.Drawing.Color.FromArgb(CType(CType(136, Byte), Integer), CType(CType(136, Byte), Integer), CType(CType(136, Byte), Integer))
+        DataGridViewCellStyle2.SelectionBackColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(198, Byte), Integer), CType(CType(247, Byte), Integer))
+        DataGridViewCellStyle2.SelectionForeColor = System.Drawing.Color.FromArgb(CType(CType(17, Byte), Integer), CType(CType(17, Byte), Integer), CType(CType(17, Byte), Integer))
+        DataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.[False]
+        Me.dgvCores.DefaultCellStyle = DataGridViewCellStyle2
+        Me.dgvCores.EnableHeadersVisualStyles = False
+        Me.dgvCores.Font = New System.Drawing.Font("Segoe UI", 11.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel)
+        Me.dgvCores.GridColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(255, Byte), Integer), CType(CType(255, Byte), Integer))
+        Me.dgvCores.Location = New System.Drawing.Point(323, 60)
+        Me.dgvCores.Name = "dgvCores"
+        Me.dgvCores.ReadOnly = True
+        Me.dgvCores.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None
+        DataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
+        DataGridViewCellStyle3.BackColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(174, Byte), Integer), CType(CType(219, Byte), Integer))
+        DataGridViewCellStyle3.Font = New System.Drawing.Font("Segoe UI", 11.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel)
+        DataGridViewCellStyle3.ForeColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(255, Byte), Integer), CType(CType(255, Byte), Integer))
+        DataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(198, Byte), Integer), CType(CType(247, Byte), Integer))
+        DataGridViewCellStyle3.SelectionForeColor = System.Drawing.Color.FromArgb(CType(CType(17, Byte), Integer), CType(CType(17, Byte), Integer), CType(CType(17, Byte), Integer))
+        DataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
+        Me.dgvCores.RowHeadersDefaultCellStyle = DataGridViewCellStyle3
+        Me.dgvCores.RowHeadersVisible = False
+        Me.dgvCores.RowHeadersWidthSizeMode = System.Windows.Forms.DataGridViewRowHeadersWidthSizeMode.DisableResizing
+        Me.dgvCores.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect
+        Me.dgvCores.Size = New System.Drawing.Size(183, 356)
+        Me.dgvCores.TabIndex = 50
+        '
         'Form1
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(314, 552)
+        Me.ClientSize = New System.Drawing.Size(520, 552)
+        Me.Controls.Add(Me.dgvCores)
+        Me.Controls.Add(Me.tlZoomHeight)
+        Me.Controls.Add(Me.tlZoomWidth)
+        Me.Controls.Add(Me.picLupa)
+        Me.Controls.Add(Me.lsbCores)
+        Me.Controls.Add(Me.picExibirLista)
         Me.Controls.Add(Me.picPegaCor)
         Me.Controls.Add(Me.lblCor)
         Me.Controls.Add(Me.panEstilo)
@@ -486,13 +608,18 @@ Partial Class Form1
         Me.Controls.Add(Me.trbRed)
         Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
         Me.MaximizeBox = False
+        Me.MaximumSize = New System.Drawing.Size(558, 552)
+        Me.MinimumSize = New System.Drawing.Size(314, 464)
         Me.Name = "Form1"
         Me.Resizable = False
         Me.ShadowType = MetroFramework.Forms.MetroFormShadowType.AeroShadow
-        Me.Text = "Paleta de Cores"
+        Me.Text = "Seletor de Cores"
         Me.panEstilo.ResumeLayout(False)
         Me.panEstilo.PerformLayout()
+        CType(Me.picExibirLista, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.picPegaCor, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.picLupa, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.dgvCores, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
@@ -527,4 +654,11 @@ Partial Class Form1
     Friend WithEvents picPegaCor As PictureBox
     Friend WithEvents MetroToolTip1 As MetroFramework.Components.MetroToolTip
     Friend WithEvents Timer1 As Timer
+    Friend WithEvents picExibirLista As PictureBox
+    Friend WithEvents lsbCores As ListBox
+    Friend WithEvents Timer2 As Timer
+    Friend WithEvents picLupa As PictureBox
+    Friend WithEvents tlZoomWidth As MetroFramework.Controls.MetroTile
+    Friend WithEvents tlZoomHeight As MetroFramework.Controls.MetroTile
+    Friend WithEvents dgvCores As MetroFramework.Controls.MetroGrid
 End Class

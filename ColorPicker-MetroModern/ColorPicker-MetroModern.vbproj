@@ -136,6 +136,8 @@
   <ItemGroup>
     <None Include="color_dropper_32.png" />
     <None Include="color_dropper_16.png" />
+    <None Include="arrow_16.png" />
+    <None Include="arrow_pointing_left_16.png" />
     <Content Include="icons8_color_palette.ico" />
     <None Include="icons8_color_palette_32.png" />
   </ItemGroup>

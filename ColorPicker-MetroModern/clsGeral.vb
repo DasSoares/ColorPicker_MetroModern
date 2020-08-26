@@ -54,6 +54,8 @@ Public Class Geral
         'Função recursiva para Tema
         For Each obj As Object In sender.Controls
             If Not TypeOf sender Is MetroPanel Then
+                If TypeOf sender Is MetroListView Then Exit Sub
+
                 Try
                     obj.Theme = theme
                     obj.UseCustomBackColor = False
